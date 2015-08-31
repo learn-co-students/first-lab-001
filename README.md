@@ -1,146 +1,122 @@
----
-tags: git, github, bash, command line, ironboard, tutorial
-languages: bash
----
-
 # Your First Lab
 
-On Ironboard, labs are exercises you have to complete.
+On Learn, labs are exercises you have to complete.
 
 The goal of this lab is to practice the workflow to complete a lab and to see if you can make a new file or directory using terminal.
-
-**Make sure you accept the invite on [Github](https://github.com/flatiron-school-ironboard) to the IronBoard team**
 
 To complete this lab you will have to:
 
 1. Fork the lab via github.
 2. Clone your fork.
-3. Create a new file.
-4. Commit that file.
-5. Push that commit to your fork.
-6. Open a Pull Request for your fork.
+3. Solve the Lab
+4. Push that commit to your fork.
+5. Open a Pull Request for your fork.
 
-Your first step is to scroll down to the bottom of the page, which will direct you to the lab on Github. You should see something like this:
+## 1. Forking from Github
 
-![Ironboard](https://s3-us-west-2.amazonaws.com/readme-photos/ib-1.png)
+Forking is the process of making a personal remote copy of the Learn lab.
 
-## Forking from Github
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/git-workflow-1.png" alt="Git Workflow 1">
 
-Forking is a feature of github that creates a copy of a repository on your account. When you solve a lab, you'll be coding the solution not on the deployed copy of the lab that everyone has access too, but rather, on your copy, your fork.
+To get started, in Learn click the title of the lab to go to Flatiron School's copy of the lab on Github.
 
-### How to Fork
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/ironboard-labs-step-0.jpg" alt="Ironboard Labs Step 0">
 
-1. Click on the Fork Button
+Next on Flatiron's Github page for the lab click the Fork button.
 
-![Clicking on Fork](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/1-how-to-fork.png)
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/ironboard-labs-step-1.jpg" alt="Ironboard Labs Step 1">
 
-2. Fork it to your personal github account.
+Then select your personal Github account as the location to fork to.
 
-![Forking](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/2-how-to-fork.png)
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/ironboard-labs-step-1b.jpg" alt="Ironboard Labs Step 1B">
 
-3. Make sure you are on your fork of the lab.
+## 2. Clone Your Fork
 
-![Your Fork](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/3-how-to-fork.png)
+Cloning is the process of making a local copy of the lab from your personal remote on Github. 
 
-#### On Ironboard
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/git-workflow-2.png" alt="Git Workflow 2">
 
-You should see something like this, once you've forked the repository:
+To clone, make sure you've first clicked on the SSH link, then click the 
+copy button next to the Clone URL to copy it to your clipboard.
 
-![Ironboard Fork](https://s3-us-west-2.amazonaws.com/readme-photos/ib-2.png)
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/ironboard-labs-step-2.jpg" alt="Ironboard Labs Step 2">
 
+Next, in Terminal navigate to the parent directory where you would like to place this lab. Then type:  `git clone <paste the clone URL here>`  
 
-## Cloning from Github
+Note: You should replace the &lt;paste the clone URL here&gt; including the &lt; and &gt; symbols in the snippet above with your actual clone URL by pressing command+v on mac or ctrl+v on windows. Example: git clone git@github.com:jongrover/first-lab-000.git
 
-Cloning means bringing down a copy of a git repository from a remote source (like Github). It is creating another copy of a repository on your computer and allowing your local copy to communicate and update the copy on github.
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/ironboard-labs-step-2b.png" alt="Ironboard Labs Step 2b">
 
-### How to Clone
+## 3. Solving this Lab
 
-1. Copy your Clone URL, it should start with https://
-
-![Your Fork Clone URL](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/1-how-to-clone.png)
-
-2. From your terminal, from your home directory (you can `cd ~` to quickly jump there), type in: `git clone` and then paste the clone address you copied in step 1.
-
-![git clone](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/2-how-to-clone.png)
-
-3. Enter in your github credentials.
-
-![github authentication](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/3-how-to-clone.png)
-
-_Note: If you have 2-factor-authentication on github turned on this won't work. Turn it off from your [settings](https://github.com/settings/security)_
-
-4. Your clone should now exist in a new directory named after the lab.
-
-![All good](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/4-how-to-clone.png)
-
-5. cd into the lab directory so you can get to work!
-
-![All good](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/5-how-to-clone.png)
-
-## Solving this Lab
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/git-workflow-3.png" alt="Git Workflow 3">
 
 Now that you have forked and cloned your fork, your goal is simple. Just create a new file within this lab.
 
-1. You should be cd'd into this lab's directory. Confirm that your working directory in terminal is this lab: `pwd`
+Go into this lab's directory by typing 'cd first-lab-000'. Confirm that your working directory in terminal is this lab by typing: `pwd`
 
-You should see something like: `/Users/avi/first-lab`
+You should see something like: `/Users/avi/first-lab-000`
 
-![1](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/1-solving-the-lab.png)
+![1](https://dl.dropboxusercontent.com/s/4h2yls40mf9femj/2015-05-03%20at%209.05%20PM.png)
+
+Now, try to run the `learn` CLI by typing `learn` in the lesson's directory. You'll see output similar to this, with failing tests (that's fine, don't panic).
+
+![Failing Tests](https://dl.dropboxusercontent.com/s/9ob3cey1lpeb6ql/2015-05-03%20at%209.10%20PM.png)
 
 2. Simply create a file. It doesn't matter what you call it.
 
+3. Once you've done that, run `learn` on your terminal, which will run one test that's in the `spec/` folder. This test is looking to see that you've added a new file. If you have the test passing on your computer, you should see something like this on Learn, indicating the local build is passing:
+
 `touch my-new-file.txt`
 
-![1](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/2-solving-the-lab.png)
-
-3. Once you've done that, run `ironboard` on your terminal, which will run one test that's in the `spec/` folder. This test is looking to see that you've added a new file. If you have the test passing on your computer, you should see something like this on Ironboard, indicating the local build is passing:
-
-![Local Build](https://s3-us-west-2.amazonaws.com/readme-photos/ib-3.png)
+![1](https://dl.dropboxusercontent.com/s/rfs3onevx3l2o21/2015-05-03%20at%209.10%20PM%20%281%29.png)
 
 4. Add it to the repo, staging it for commit.
 
 `git add my-new-file.txt`
 
-![1](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/3-solving-the-lab.png)
+![1](https://dl.dropboxusercontent.com/s/kesh225ztp4owbk/2015-05-03%20at%209.12%20PM.png)
 
-5. Confirm that the file is staged for commit with `git status`
-
-![1](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/4-solving-the-lab.png)
-
-6. Commit the file.
+5. Commit the file.
 
 `git commit -am "My first commit"`
 
-![1](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/5-solving-the-lab.png)
+![1](https://dl.dropboxusercontent.com/s/9y3zt153pvaabh0/2015-05-03%20at%209.14%20PM.png)
 
+## 4. Push Your Code to Github
 
-7. Push that to your fork, up to github.
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/git-workflow-4.png" alt="Git Workflow 4">
+
+After adding and commiting your most recent work next we want to push our work up to our personal Github remote (origin). 
 
 `git push origin master`
 
-![1](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/6-solving-the-lab.png)
+![1](https://dl.dropboxusercontent.com/s/7qta395mpnmst7x/2015-05-03%20at%209.15%20PM.png)
 
-
-8. Go to github and confirm the push.
+Go to github and confirm the push.
 
 ![1](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/7-solving-the-lab.png)
 
-## Opening a Pull Request
+## 5. Opening a Pull Request
 
-Open the lab in github (the end of step 7 above).
+Submitting a pull request can be described as the process of asking the maintainer of the Learn lab (upstream remote) to consider pulling (fetching & merging) in your work from your personal remote copy (origin remote). This enables your instructor to see your solution for the lab.
 
-1. Click on the branch comparison icon from the repository home.
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/git-workflow-5.png" alt="Git Workflow 5">
 
-![1](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/1-opening-pull-request.png)
+To do so, in Learn click the title of the lab to go to your forked copy on Github.
 
-2. Click Create Pull Request
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/ironboard-labs-step-0b.jpg" alt="Ironboard Labs Step 0b">
 
-![1](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/2-opening-pull-request.png)
+Then click the green Pull Request button.
 
-3. Confirm the Create Pull Request
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/ironboard-labs-step-4.jpg" alt="Ironboard Labs Step 4">
 
-![1](http://flatiron-videos.s3.amazonaws.com/ironboard/ironboard-tutorial/3-opening-the-pull-request.png)
+After reviewing the comparison code and making sure it shows your solution, click the Create pull request button.
 
-4. Look on Ironboard again and you should see a confirmation of that pull request being opened and a remote build passing:
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/ironboard-labs-step-4e.jpg" alt="Ironboard Labs Step 4e">
 
-![PR & Remote Build](https://s3-us-west-2.amazonaws.com/readme-photos/ib-4.png)
+Then click Create pull request button again.
+
+<img width="100%" height="auto" src="http://ironboard-curriculum-content.s3.amazonaws.com/front-end/lab-assets/ironboard-labs-step-4f.jpg" alt="Ironboard Labs Step 4f">
+
+That's it, you're done! Now go back to Learn and you should see the Pull Request flip to green, and the remote build will be kicked off. Once it passes, you will be able to proceed to the Next Lesson.
